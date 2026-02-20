@@ -1,0 +1,38 @@
+# TrueAttend — Python dependencies
+# Install: pip install -r requirements.txt
+
+# Web Framework
+Flask==3.0.3
+flask-socketio==5.3.6
+flask-cors==4.0.1
+flask-jwt-extended==4.6.0
+flask-sqlalchemy==3.1.1
+flask-mail==0.10.0
+
+# Database
+SQLAlchemy==2.0.30
+alembic==1.13.1
+
+# ML / Face Recognition  (heavy — install separately if needed)
+# face_recognition requires cmake + dlib; see README for install steps
+face-recognition==1.3.0
+deepface==0.0.92          # optional, comment out if only using face_recognition
+
+# Computer Vision
+opencv-python==4.10.0.84
+numpy==1.26.4
+Pillow==10.3.0
+
+# Utilities
+python-dotenv==1.0.1
+Werkzeug==3.0.3
+scikit-learn==1.5.0       # for KNN matching / analytics
+pandas==2.2.2             # for attendance report exports
+
+# Production server
+gunicorn==22.0.0
+eventlet==0.36.1          # or gevent for socketio
+
+# Testing
+pytest==8.2.1
+pytest-flask==1.3.0
